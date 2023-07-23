@@ -1651,19 +1651,19 @@ export const   resList = [
       },
       parentWidget: false,
     },
-    {
-      cardType: "messageCard",
-      layoutAlignmentType: "VERTICAL",
-      data: {
-        type: "messageCard",
-        data: {
-          message: "Opens next at 7 am, today",
-        },
-        subtype: "info",
-        sticky: 1,
-      },
-      parentWidget: false,
-    },
+    // {
+    //   cardType: "messageCard",
+    //   layoutAlignmentType: "VERTICAL",
+    //   data: {
+    //     type: "messageCard",
+    //     data: {
+    //       message: "Opens next at 7 am, today",
+    //     },
+    //     subtype: "info",
+    //     sticky: 1,
+    //   },
+    //   parentWidget: false,
+    // },
   ];
   
   const CDN_LINK="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/"
