@@ -59,6 +59,26 @@
     /* column-gap: 3px; */
 }
 
+.shimmer{
+    font-size: 12px;
+    font-family:'popins', sans-serif;
+    
+    margin-top:20px;
+     width:950px; 
+    margin:auto ;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    row-gap: 35px;
+    /* column-gap: 3px; */
+}
+
+.shimmer-cell{
+    width:250px;
+    background-color:rgb(243, 228, 228);
+    height:160px;
+    border-radius: 15px;
+}
+
 .area{
     font-weight: 400;
     color:#787878;

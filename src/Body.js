@@ -1,7 +1,7 @@
 import { resList } from "./constant";
 import Restaurentcard from "./restaurant_card";
 import { useState , useEffect} from "react";
-import {shimmer} from "./shimmer";
+import Shimmer from "./shimmer";
 
 function filterdata(searchval, Reslist){
   const newdata = Reslist.filter((obj) => {
@@ -28,7 +28,9 @@ const Body=function (){
     // let searchval="kfc";
     // this is way of creating local state variable 
    let [searchval, setsearchval]=useState(""); 
-   let [Reslist, setReslist]=useState([]);
+  // let's make two restaurant list 
+  let [allrestlist, setallrestlist]=useState([]);
+  let [filteredrestlist, setfilteredrestlist]=useState([]);
 
    useEffect(()=>{
     apicall();
@@ -37,12 +39,20 @@ const Body=function (){
    async function apicall(){
     const data= await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=25.5940499&lng=85.1376051&page_type=DESKTOP_WEB_LISTING");
     const jsondata= await data.json();
-     setReslist(jsondata?.data?.cards[2]?.data?.data?.cards);
+     setallrestlist(jsondata?.data?.cards[2]?.data?.data?.cards);
+     setfilteredrestlist(jsondata?.data?.cards[2]?.data?.data?.cards);
     console.log(jsondata);
 }
    
    
-   return (
+
+
+  // not rendering early return 
+  if(!allrestlist) return null;
+
+   // shimmer ui will be shown if Reslist is empty
+   // conditonal rendering (ternary )
+   return (allrestlist.length===0)?<Shimmer/>:(
         <>
      
         <div>
@@ -55,8 +65,9 @@ const Body=function (){
            />
           <button className="search-btn" 
           onClick={()=>{
-            const Data=filterdata(searchval, Reslist);
-            setReslist(Data);
+            const Data=filterdata(searchval, allrestlist);
+            
+            setfilteredrestlist(Data);
           }
                    
           }
@@ -66,8 +77,9 @@ const Body=function (){
         </div>
         
       <div className="body-comp">
-      {
-      Reslist.map((restaurent)=>{
+      { 
+               
+      filteredrestlist.map((restaurent)=>{
         return <Restaurentcard  {...restaurent.data} />
       })};
     

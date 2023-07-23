@@ -1,8 +1,14 @@
- import Title from "./Title";
+ import { useState } from "react";
+import Title from "./Title";
+
+ 
+
  
  export const Header=function (){
-    // agar return wala line multiple line me chale jaye to usko () brcket ke under 
-    // band kar do 
+    
+    const [isloggedout, Setisloggedout]=useState(true);
+
+
     return (
         <div className="header">
         <Title/>
@@ -14,8 +20,17 @@
             <li>Contact</li>
             <li>Cart</li>
           </ul>
-        </div>
-
+        </div>{
+        (isloggedout)? <button
+         onClick={()=>{
+          Setisloggedout(false);
+         }}
+        >Log In</button>:
+         <button
+          onClick={()=>{
+            Setisloggedout(true);
+          }}
+         >Log Out</button>}
         </div>
     )
 }
