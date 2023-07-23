@@ -19,7 +19,7 @@ import About from "./About";
           <ul>
             <Link to ="/">Home</Link>
             <Link to ="/About">About</Link>
-            <li>Contact</li>
+           <Link to ="/contact">contact</Link>
             <li>Cart</li>
           </ul>
         </div>{

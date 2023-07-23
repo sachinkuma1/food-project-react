@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Children } from "react";
 import ReactDOM from "react-dom/client";
 import { resList } from "./constant";
 import Title from "./Title";
@@ -7,8 +7,9 @@ import Restaurentcard from "./restaurant_card";
 import Body from "./Body";
 import Footer from "./Footer";
 import About from "./About";
-import { createBrowserRouter, RouterProvider} from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet} from "react-router-dom";
 import Error from "./Error";
+import Contact from "./contact";
 
 
 
@@ -19,7 +20,7 @@ const Applayout=function(){
     // we can use react.fragement inside another another react.fragement
     <>
     <Header/>
-    <Body/>
+    <Outlet/>
     <Footer/>
     </>
     
@@ -28,13 +29,24 @@ const Applayout=function(){
 
 const approuter=createBrowserRouter([
   {
-    path:"/",
+    // path:"/",
     element:<Applayout/>,
-    errorElement:<Error/>
-  }, 
-  {
-    path:"/About", 
-    element:<About/>
+    errorElement:<Error/>,
+    children:[
+      {
+        path:"/About",
+        element:<About/>
+      }, 
+      {
+        path:"/", 
+        element:<Body/>
+      }, 
+      {
+        path:"/contact",
+        element:<Contact/>
+      }
+
+    ]
   }
 
 ])
