@@ -1,5 +1,7 @@
  import { useState } from "react";
 import Title from "./Title";
+import { Link } from "react-router-dom";
+import About from "./About";
 
  
 
@@ -15,8 +17,8 @@ import Title from "./Title";
 
         <div className="nav-bar">
           <ul>
-            <li>Home</li>
-            <li>About</li>
+            <Link to ="/">Home</Link>
+            <Link to ="/About">About</Link>
             <li>Contact</li>
             <li>Cart</li>
           </ul>

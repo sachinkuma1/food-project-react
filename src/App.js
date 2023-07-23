@@ -8,6 +8,8 @@ import Body from "./Body";
 import Footer from "./Footer";
 import About from "./About";
 import { createBrowserRouter, RouterProvider} from "react-router-dom";
+import Error from "./Error";
+
 
 
 
@@ -27,7 +29,8 @@ const Applayout=function(){
 const approuter=createBrowserRouter([
   {
     path:"/",
-    element:<Applayout/>
+    element:<Applayout/>,
+    errorElement:<Error/>
   }, 
   {
     path:"/About", 
