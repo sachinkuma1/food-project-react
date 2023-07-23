@@ -6,6 +6,10 @@ import {Header} from "./Header";
 import Restaurentcard from "./restaurant_card";
 import Body from "./Body";
 import Footer from "./Footer";
+import About from "./About";
+import { createBrowserRouter, RouterProvider} from "react-router-dom";
+
+
 
 
 const Applayout=function(){
@@ -19,6 +23,19 @@ const Applayout=function(){
     
   )
 };
+
+const approuter=createBrowserRouter([
+  {
+    path:"/",
+    element:<Applayout/>
+  }, 
+  {
+    path:"/About", 
+    element:<About/>
+  }
+
+])
+
 const root=ReactDOM.createRoot(document.getElementById("root"));
 // to render the functional component
-root.render(<Applayout/>);
+root.render(<RouterProvider router={approuter}/>);
