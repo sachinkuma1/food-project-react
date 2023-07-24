@@ -2,6 +2,7 @@ import { resList } from "./constant";
 import Restaurentcard from "./restaurant_card";
 import { useState , useEffect} from "react";
 import Shimmer from "./shimmer";
+import { Link } from "react-router-dom";
 
 function filterdata(searchval, Reslist){
   const newdata = Reslist.filter((obj) => {
@@ -80,7 +81,10 @@ const Body=function (){
       { 
                
       filteredrestlist.map((restaurent)=>{
-        return <Restaurentcard  {...restaurent.data} />
+        {console.log(restaurent.data.id)}
+        return (<Link  to={"/rest/"+restaurent.data.id}>
+         <Restaurentcard  {...restaurent.data} />
+        </Link>)
       })};
     
      
