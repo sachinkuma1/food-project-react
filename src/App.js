@@ -31,7 +31,8 @@ const Applayout=function(){
 const approuter=createBrowserRouter([
   {
     // path:"/",
-    element:<Applayout/>,
+    // anyhow we have to render header and footer so we will render <Applayout/> always 
+    element:<Applayout/>, 
     errorElement:<Error/>,
     children:[
       {

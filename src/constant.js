@@ -1665,6 +1665,8 @@ export const   resList = [
     //   parentWidget: false,
     // },
   ];
+
+  export const REST_API_LINK="https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=25.5940499&lng=85.1376051&restaurantId=";
   
   const CDN_LINK="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/"
   export default CDN_LINK;

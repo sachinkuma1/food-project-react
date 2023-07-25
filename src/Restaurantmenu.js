@@ -3,22 +3,14 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import CDN_LINK from "./constant";
 import Shimmer from "./shimmer";
+import userestaurantmenu from "./utils/userestaurantmenu";
 
 const Restaurantmenu=()=>{
     const params=useParams();
     // console.log(params);
-    const [restmenu, setrestmenu]=useState(null);
+    const  restmenu=userestaurantmenu(params.resId);
 
-    useEffect(()=>{
-        callmenuapi();
-    }, [])
- async function callmenuapi(){
-    const tempdata=await fetch("https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=25.5940499&lng=85.1376051&restaurantId="+params.resId)
-     const json=await tempdata.json();
-    console.log(json);
-    setrestmenu(json?.data?.cards[0]?.card?.card?.info);
-
-}
+   
 
 
     return (!restmenu)?<Shimmer/>: (
