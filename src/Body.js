@@ -3,6 +3,7 @@ import Restaurentcard from "./restaurant_card";
 import { useState , useEffect} from "react";
 import Shimmer from "./shimmer";
 import { Link } from "react-router-dom";
+import useOffline from "./utils/useoffline";
 
 function filterdata(searchval, Reslist){
   const newdata = Reslist.filter((obj) => {
@@ -24,6 +25,9 @@ function filterdata(searchval, Reslist){
  
 
 const Body=function (){
+
+ 
+
   
   
     // let searchval="kfc";
@@ -44,9 +48,15 @@ const Body=function (){
      setfilteredrestlist(jsondata?.data?.cards[2]?.data?.data?.cards);
     console.log(jsondata);
 }
-   
-   
 
+
+
+const offline=useOffline();
+if(offline){
+ return <h1>You are offline</h1>
+}
+   
+  
 
   // not rendering early return 
   if(!allrestlist) return null;
@@ -54,17 +64,17 @@ const Body=function (){
    // shimmer ui will be shown if Reslist is empty
    // conditonal rendering (ternary )
    return (allrestlist.length===0)?<Shimmer/>:(
-        <>
+        <div className="bg-slate-50">
      
-        <div>
-          <input type="text" className="search-container" placeholder="search"
+        <div >
+          <input type="text" className="mt-9 mb-9  ml-11" placeholder="search"
           value={searchval}
           onChange={(e)=>{
             setsearchval(e.target.value);
           // searchval=e.target.value;  it won't work 
            }}
            />
-          <button className="search-btn" 
+          <button className="bg-lime-800" 
           onClick={()=>{
             const Data=filterdata(searchval, allrestlist);
             
@@ -77,7 +87,8 @@ const Body=function (){
           </button>
         </div>
         
-      <div className="body-comp">
+      
+      <div className="max-w-4xl  grid grid-cols-3 mx-[auto]  gap-x-4  gap-y-4 ">
       { 
                
       filteredrestlist.map((restaurent)=>{
@@ -90,7 +101,8 @@ const Body=function (){
      
      
       </div>
-      </>
+      
+      </div>
     )
   }
 

@@ -11,14 +11,26 @@ import { createBrowserRouter, RouterProvider, Outlet} from "react-router-dom";
 import Error from "./Error";
 import Contact from "./contact";
 import Restaurantmenu from "./Restaurantmenu";
+import { Suspense } from "react";
+import Instamart from "./Instamart";
+import Shimmer from "./shimmer";
+import useOffline from "./utils/useoffline";
+
 
 
 
 
 
 const Applayout=function(){
+  
+
+
+
+
   return (
     // we can use react.fragement inside another another react.fragement
+    
+
     <>
     <Header/>
     <Outlet/>
@@ -50,6 +62,12 @@ const approuter=createBrowserRouter([
       {
         path:"/rest/:resId",
         element:<Restaurantmenu/>
+      }, 
+      {
+        path:"/Instamart", 
+        element:<Suspense  fallback={<Shimmer/>}>
+          <Instamart/>
+        </Suspense>
       }
 
     ]

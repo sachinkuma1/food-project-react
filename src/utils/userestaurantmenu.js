@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState , useEffect} from "react";
 import { REST_API_LINK } from "../constant";
 
 const userestaurantmenu=(resId)=>{
@@ -12,7 +12,7 @@ const userestaurantmenu=(resId)=>{
     const tempdata=await fetch(REST_API_LINK+resId)
      const json=await tempdata.json();
     console.log(json);
-    setrestmenu(json?.data?.cards[0]?.card?.card?.info);
+    setrestaurant(json?.data?.cards[0]?.card?.card?.info);
 
 }
 

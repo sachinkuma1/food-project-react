@@ -1,10 +1,10 @@
- import { useState } from "react";
+ import { useState, lazy , Suspense} from "react";
 import Title from "./Title";
 import { Link } from "react-router-dom";
 import About from "./About";
 
- 
-
+ // let's import like lazy loading 
+const Instamart=lazy(()=>import("./Instamart"));
  
  export const Header=function (){
     
@@ -12,18 +12,19 @@ import About from "./About";
 
 
     return (
-        <div className="header">
-        <Title/>
+        <div className="flex shadow-md items-center  space-x-2">
 
-        <div className="nav-bar">
-          <ul>
+        <div className="flex space-x-2 items-center ">
+        <Title/>
+          <ul className="flex space-x-4">
             <Link to ="/">Home</Link>
             <Link to ="/About">About</Link>
            <Link to ="/contact">contact</Link>
+           <Link to ="/Instamart">Instamart</Link>
             <li>Cart</li>
           </ul>
         </div>{
-        (isloggedout)? <button
+        (isloggedout)? <button className=" bg-green-500"
          onClick={()=>{
           Setisloggedout(false);
          }}
