@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+import React, { Children, useState } from "react";
 import ReactDOM from "react-dom/client";
 import { resList } from "./constant";
 import Title from "./Title";
@@ -21,6 +21,7 @@ import useOffline from "./utils/useoffline";
 
 
 
+
 const Applayout=function(){
   
 
@@ -29,14 +30,16 @@ const Applayout=function(){
 
   return (
     // we can use react.fragement inside another another react.fragement
-    
 
+   
+    
     <>
+  
     <Header/>
     <Outlet/>
     <Footer/>
+   
     </>
-    
   )
 };
 

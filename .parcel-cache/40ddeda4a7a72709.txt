@@ -25,7 +25,7 @@
 73C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\@lezer133334867734334563 1
 99C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\yaml\dist\schema\common\map.d.ts133348206953692827 0
 117C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\postcss-selector-parser\dist\util\stripComments.js133348206948224304 0
-64C:\Users\sachi\Downloads\React_Learning\first_project\.gitignore133348648554102561 0
+64C:\Users\sachi\Downloads\React_Learning\first_project\.gitignore133349070204755591 0
 116C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\@parcel\source-map\parcel_sourcemap_node\build.rs133334867770857679 0
 107C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\posthtml-parser\dist\location-tracker.js133334867751028022 0
 102C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\update-browserslist-db\package.json133334867752688248 0
@@ -49,11 +49,11 @@
 110C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\yaml\browser\dist\schema\yaml-1.1\binary.js133348206947297307 0
 98C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\lmdb\dependencies\lz4\lib\lz4.c133334867762084665 0
 117C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\caniuse-lite\data\features\intersectionobserver.js133334867784656287 0
-57C:\Users\sachi\Downloads\React_Learning\first_project\src133348649316197512 1
+57C:\Users\sachi\Downloads\React_Learning\first_project\src133349560931653045 1
 89C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\concat-map\test\map.js133348206946295619 0
 98C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\sucrase\dist\esm\NameManager.js133348206950708308 0
 102C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\@nodelib\fs.scandir\out\settings.js133348206946986223 0
-58C:\Users\sachi\Downloads\React_Learning\first_project\dist133349013165270617 1
+58C:\Users\sachi\Downloads\React_Learning\first_project\dist133349569407445349 1
 87C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\@parcel\core\LICENSE133334867758742686 0
 64C:\Users\sachi\Downloads\React_Learning\first_project\index.html133348648554428519 0
 116C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\css-select\node_modules\entities\lib\index.js.map133334867766870867 0
@@ -106,7 +106,7 @@
 105C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\yaml\browser\dist\schema\core\float.js133348206949557976 0
 100C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\tailwindcss\src\cli\build\deps.js133348206950585338 0
 132C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\@parcel\optimizer-svgo\node_modules\csso\lib\replace\Dimension.js133334867762095846 0
-64C:\Users\sachi\Downloads\React_Learning\first_project\src\App.js133348648554458526 0
+64C:\Users\sachi\Downloads\React_Learning\first_project\src\App.js133349560819291207 0
 74C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\thenify133348206945555140 1
 87C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\tailwindcss\base.css133348206947144343 0
 65C:\Users\sachi\Downloads\React_Learning\first_project\src\Body.js133348987936095950 0
@@ -139,7 +139,7 @@
 97C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\tailwindcss\src\oxide\cli\init133348206956018989 1
 85C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\dom-serializer\lib133334867758170948 1
 110C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\@babel\highlight\node_modules\chalk\license133334867750973469 0
-67C:\Users\sachi\Downloads\React_Learning\first_project\src\Footer.js133348648554468453 0
+67C:\Users\sachi\Downloads\React_Learning\first_project\src\Footer.js133349561556453636 0
 80C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\react-dom\umd133334868600144702 1
 67C:\Users\sachi\Downloads\React_Learning\first_project\src\Header.js133348691392675927 0
 88C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\css-tree\cjs\data.cjs133334867762126763 0
@@ -162,7 +162,7 @@
 93C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\react-router\dist\index.js133346057431911131 0
 78C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\timsort\src133334867754507974 1
 154C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\syntax\node\PseudoClassSelector.js133334867772200604 0
-70C:\Users\sachi\Downloads\React_Learning\first_project\src\Instamart.js133349013162613039 0
+70C:\Users\sachi\Downloads\React_Learning\first_project\src\Instamart.js133349569403532034 0
 93C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\parent-module\package.json133334867748634918 0
 131C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\@swc\helpers\_\_class_static_private_field_spec_get\package.json133334867780189014 0
 112C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\caniuse-lite\data\features\css-transitions.js133334867778557326 0
@@ -957,7 +957,7 @@
 114C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\sucrase\dist\types\util\getTSImportedNames.d.ts133348206953283897 0
 120C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\@swc\helpers\_\_class_private_method_set\package.json133334867780129291 0
 100C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\yaml\dist\schema\common\string.js133348206951692954 0
-69C:\Users\sachi\Downloads\React_Learning\first_project\dist\index.html133348982682310217 0
+69C:\Users\sachi\Downloads\React_Learning\first_project\dist\index.html133349569186966925 0
 92C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\posthtml-render\readme.md133334867752401499 0
 95C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\tailwindcss\src\oxide\cli.ts133348206955713147 0
 101C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\caniuse-lite\data\features\xhr2.js133334867799840311 0
@@ -2098,7 +2098,7 @@
 109C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\fast-glob\node_modules\glob-parent\LICENSE133348206944007293 0
 101C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\tailwindcss\src\util\colorNames.js133348206949178305 0
 97C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\tailwindcss\src\corePlugins.js133348206949955744 0
-77C:\Users\sachi\Downloads\React_Learning\first_project\dist\index.9e4c6fd2.css133349013163815667 0
+77C:\Users\sachi\Downloads\React_Learning\first_project\dist\index.9e4c6fd2.css133349569406648426 0
 86C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\tailwindcss\src\css133348206947364135 1
 98C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\tailwindcss\src\featureFlags.js133348206950965911 0
 117C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\@parcel\optimizer-svgo\node_modules\svgo\README.md133334867770750944 0
@@ -3052,7 +3052,7 @@
 106C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\@swc\helpers\cjs\_iterable_to_array.cjs133334867767542300 0
 111C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\caniuse-lite\data\features\xml-serializer.js133334867799870721 0
 100C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\source-map\dist\source-map.min.js133334867760723202 0
-81C:\Users\sachi\Downloads\React_Learning\first_project\dist\index.9e4c6fd2.css.map133349013163906129 0
+81C:\Users\sachi\Downloads\React_Learning\first_project\dist\index.9e4c6fd2.css.map133349569406708861 0
 81C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\semver\classes133334867763992256 1
 91C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\htmlparser2\lib\index.js133334867750243105 0
 103C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\resolve\test\resolver\same_names\foo133348206949784432 1
@@ -7885,8 +7885,8 @@
 80C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\.bin\svgo.cmd133334867800441953 0
 80C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\.bin\svgo.ps1133334867800441953 0
 80C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\.bin\tailwind133348206956407687 0
-76C:\Users\sachi\Downloads\React_Learning\first_project\dist\index.7271efb6.js133349013165169599 0
+76C:\Users\sachi\Downloads\React_Learning\first_project\dist\index.7271efb6.js133349569407307650 0
 84C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\.bin\tailwind.ps1133348206956407687 0
 83C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\.bin\tailwindcss133348206956419155 0
 98C:\Users\sachi\Downloads\React_Learning\first_project\node_modules\.bin\update-browserslist-db.ps1133334867800441953 0
-80C:\Users\sachi\Downloads\React_Learning\first_project\dist\index.7271efb6.js.map133349013165260637 0
+80C:\Users\sachi\Downloads\React_Learning\first_project\dist\index.7271efb6.js.map133349569407425385 0
