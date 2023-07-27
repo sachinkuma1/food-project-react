@@ -44,9 +44,9 @@ const Body=function (){
    async function apicall(){
     const data= await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=25.5940499&lng=85.1376051&page_type=DESKTOP_WEB_LISTING");
     const jsondata= await data.json();
-     setallrestlist(jsondata?.data?.cards[2]?.data?.data?.cards);
-     setfilteredrestlist(jsondata?.data?.cards[2]?.data?.data?.cards);
-    console.log(jsondata);
+    // console.log(jsondata);
+     setallrestlist( jsondata?.data?.cards[2]?.data?.data?.cards);
+     setfilteredrestlist( jsondata?.data?.cards[2]?.data?.data?.cards );
 }
 
 
@@ -92,7 +92,7 @@ if(offline){
       { 
                
       filteredrestlist.map((restaurent)=>{
-        {console.log(restaurent.data.id)}
+        {/* {console.log(restaurent..id)} */}
         return (<Link  to={"/rest/"+restaurent.data.id}>
          <Restaurentcard  {...restaurent.data} />
         </Link>)

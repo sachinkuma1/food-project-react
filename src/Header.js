@@ -12,9 +12,9 @@ const Instamart=lazy(()=>import("./Instamart"));
 
 
     return (
-        <div className="flex shadow-md items-center  space-x-2">
+        <div className="flex  items-center  space-x-2 ">
 
-        <div className="flex space-x-2 items-center ">
+        <div className="flex space-x-2 items-center  shadow-sm">
         <Title/>
           <ul className="flex space-x-4">
             <Link to ="/">Home</Link>
@@ -24,7 +24,7 @@ const Instamart=lazy(()=>import("./Instamart"));
             <li>Cart</li>
           </ul>
         </div>{
-        (isloggedout)? <button className=" bg-green-500"
+        (isloggedout)? <button className=" bg-green-400"
          onClick={()=>{
           Setisloggedout(false);
          }}
