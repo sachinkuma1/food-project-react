@@ -7,10 +7,10 @@ import useOffline from "./utils/useoffline";
 
 function filterdata(searchval, Reslist){
   const newdata = Reslist.filter((obj) => {
-    const nameMatch = obj?.data?.name
+    const nameMatch = obj?.info?.name
       .toLowerCase()
       .includes(searchval.toLowerCase());
-    const areaMatch = obj?.data?.area
+    const areaMatch = obj?.info?.areaName
       .toLowerCase()
       .includes(searchval.toLowerCase());
     return nameMatch || areaMatch;
@@ -44,9 +44,11 @@ const Body=function (){
    async function apicall(){
     const data= await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=25.5940499&lng=85.1376051&page_type=DESKTOP_WEB_LISTING");
     const jsondata= await data.json();
-    // console.log(jsondata);
-     setallrestlist( jsondata?.data?.cards[2]?.data?.data?.cards);
-     setfilteredrestlist( jsondata?.data?.cards[2]?.data?.data?.cards );
+    console.log(jsondata);
+     setallrestlist(   jsondata?.data?.cards[5].card?.card?.gridElements?.infoWithStyle
+      ?.restaurants);
+     setfilteredrestlist(  jsondata?.data?.cards[5].card?.card?.gridElements?.infoWithStyle
+      ?.restaurants) ;
 }
 
 
@@ -93,8 +95,8 @@ if(offline){
                
       filteredrestlist.map((restaurent)=>{
         {/* {console.log(restaurent..id)} */}
-        return (<Link  to={"/rest/"+restaurent.data.id}>
-         <Restaurentcard  {...restaurent.data} />
+        return (<Link  to={"/rest/"+restaurent.info.id}>
+         <Restaurentcard  {...restaurent.info} />
         </Link>)
       })};
     
