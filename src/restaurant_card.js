@@ -1,7 +1,7 @@
 import { resList } from "./constant";
 import CDN_LINK from "./constant";
 
-const Restaurentcard=function({name,cloudinaryImageId, area }){
+const Restaurentcard=function({name,cloudinaryImageId, areaName   }){
 
   // console.log(props.restr);
   // console.log(resList[0]);
@@ -11,7 +11,7 @@ const Restaurentcard=function({name,cloudinaryImageId, area }){
    <img src={CDN_LINK
    +cloudinaryImageId} alt="res-img"          className="rounded-2xl"/> 
     <h3>{name }</h3>
-    <h3 className="area">{  area}</h3>
+    <h3 className="area">{  areaName}</h3>
    
     </div>
   )

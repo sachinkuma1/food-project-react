@@ -15,8 +15,9 @@ import { Suspense } from "react";
 import Instamart from "./Instamart";
 import Shimmer from "./shimmer";
 import useOffline from "./utils/useoffline";
-
-
+import usercontext from "./Usercontext";
+import {provider} from 'react-redux';
+import Store from "./utils/store";
 
 
 
@@ -24,6 +25,9 @@ import useOffline from "./utils/useoffline";
 
 const Applayout=function(){
   
+  const [user, setUser]=useState({
+    name:"sachin"
+  })
 
 
 
@@ -33,13 +37,15 @@ const Applayout=function(){
 
    
     
-    <>
-  
+    // <provider store={Store}>
+    
+  <usercontext.Provider value={user}>
     <Header/>
     <Outlet/>
     <Footer/>
-   
-    </>
+    </usercontext.Provider>
+    
+    // </provider>
   )
 };
 

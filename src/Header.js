@@ -1,15 +1,19 @@
- import { useState, lazy , Suspense} from "react";
+ import { useState, lazy , Suspense, useContext} from "react";
 import Title from "./Title";
 import { Link } from "react-router-dom";
 import About from "./About";
+import { useSelector } from "react-redux";
+
+
+
 
  // let's import like lazy loading 
 const Instamart=lazy(()=>import("./Instamart"));
  
  export const Header=function (){
-    
+   
     const [isloggedout, Setisloggedout]=useState(true);
-
+   const cartitems=useSelector((store)=>store.name.items);
 
     return (
         <div className="flex  items-center  space-x-2 ">
@@ -22,6 +26,7 @@ const Instamart=lazy(()=>import("./Instamart"));
            <Link to ="/contact">contact</Link>
            <Link to ="/Instamart">Instamart</Link>
             <li>Cart</li>
+          
           </ul>
         </div>{
         (isloggedout)? <button className=" bg-green-400"
